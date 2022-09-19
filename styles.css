@@ -31,11 +31,10 @@ body {
   border: 2px solid white;
   width: 328px;
   margin: 158px auto;
-  position: relative;
 }
 
 .first-section {
-  /*border: 1px solid yellow;*/
+  position: relative;
 }
 
 .main-card__user {
@@ -90,7 +89,7 @@ body {
 }
 
 .card {
-  border: 1px solid white;
+  /*border: 1px solid white;*/
   position: relative;
   margin-bottom: 105px;
 }
@@ -119,4 +118,103 @@ body {
   position: absolute;
   width: 100%;
   bottom: -85px;
+}
+
+.card__details:hover {
+  background-color: var(--Desaturated-blue);
+  cursor: pointer;
+}
+
+.card__activity,
+.card__time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__title {
+  font-weight: 500;
+  font-size: 1.2em;
+  color: var(--white);
+}
+
+.card__hour {
+  font-size: 2em;
+  color: var(--white);
+  font-weight: 300;
+}
+
+.attribution {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.attribution a {
+  color: hsl(228, 70%, 13%);
+}
+
+@media (min-width: 1200px) {
+  .main-container {
+    width: 1150px;
+    display: flex;
+  }
+
+  .first-section {
+    /* border: 4 px solid yellow;*/
+    padding-top: 24px;
+    width: 280px;
+    height: 564px;
+  }
+
+  .second-section {
+    height: 564px;
+    width: 860px;
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 24px;
+  }
+
+  .main-card__user {
+    height: 355px;
+    flex-direction: column;
+  }
+  .main-card__image {
+    width: 85px;
+    margin-bottom: 45px;
+  }
+  .main-card__title {
+    font-size: 1em;
+  }
+
+  .main-card__name {
+    font-size: 2.4em;
+  }
+  .main-card__dates {
+    margin-top: 245px;
+    height: 200px;
+    flex-direction: column;
+    padding: 40px 32px 18px;
+  }
+
+  .card {
+    width: 240px;
+    height: 244px;
+    margin-bottom: 25px;
+  }
+
+  .card__image {
+    padding-left: 140px;
+  }
+  .card__details {
+    height: 200px;
+    bottom: -10px;
+  }
+
+  .card__time {
+    height: 300px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0;
+  }
 }
