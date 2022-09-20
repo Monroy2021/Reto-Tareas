@@ -28,7 +28,7 @@ body {
 }
 
 .main-container {
-  border: 2px solid white;
+  /*border: 2px solid white;*/
   width: 328px;
   margin: 158px auto;
 }
@@ -85,7 +85,7 @@ body {
 
 .second-section {
   margin-top: 220px;
-  border: 1px solid white;
+  /* border: 1px solid white;*/
 }
 
 .card {
@@ -157,6 +157,7 @@ body {
   .main-container {
     width: 1150px;
     display: flex;
+    margin: 160px auto;
   }
 
   .first-section {
@@ -169,14 +170,14 @@ body {
   .second-section {
     height: 564px;
     width: 860px;
-    margin-top: 0;
+    padding-top: 0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 24px;
   }
 
   .main-card__user {
-    height: 355px;
+    height: 370px;
     flex-direction: column;
   }
   .main-card__image {
@@ -191,7 +192,7 @@ body {
     font-size: 2.4em;
   }
   .main-card__dates {
-    margin-top: 245px;
+    margin-top: 250px;
     height: 200px;
     flex-direction: column;
     padding: 40px 32px 18px;
